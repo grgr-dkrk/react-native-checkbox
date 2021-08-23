@@ -114,11 +114,11 @@ class CheckBox extends React.Component<Props> {
   render() {
     // Do not use onValueChange directly from props
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const {style, onValueChange, disabled, ...props} = this.props;
+    const {style, onValueChange, disabled, accessible, ...props} = this.props;
     return (
       <View
         pointerEvents={disabled ? 'none' : 'auto'}
-        accessible
+        accessible={accessible != null ? accessible : true}
         accessibilityRole="checkbox"
         accessibilityState={{
           checked: props.value || false,

@@ -62,6 +62,35 @@ exports[`render Android <Checkbox /> renders enabled Android Checkbox 1`] = `
 />
 `;
 
+exports[`render IOS <Checkbox /> renders IOS Checkbox with accessible={false} props 1`] = `
+<View
+  accessibilityRole="checkbox"
+  accessibilityState={
+    Object {
+      "checked": false,
+      "disabled": false,
+    }
+  }
+  accessible={false}
+  pointerEvents="auto"
+>
+  <RNCCheckbox
+    forwardedRef={null}
+    onValueChange={[Function]}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "height": 32,
+          "width": 32,
+        },
+        undefined,
+      ]
+    }
+  />
+</View>
+`;
+
 exports[`render IOS <Checkbox /> renders IOS Checkbox with full setting 1`] = `
 <View
   accessibilityRole="checkbox"
