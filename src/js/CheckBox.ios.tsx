@@ -116,7 +116,14 @@ class CheckBox extends React.Component<Props> {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const {style, onValueChange, disabled, ...props} = this.props;
     return (
-      <View pointerEvents={disabled ? 'none' : 'auto'}>
+      <View
+        pointerEvents={disabled ? 'none' : 'auto'}
+        accessible
+        accessibilityRole="checkbox"
+        accessibilityState={{
+          checked: props.value || false,
+          disabled: disabled || false,
+        }}>
         <IOSCheckBoxNativeComponent
           {...props}
           // @ts-ignore TODO: implement the type of IOSCheckBoxNativeComponent

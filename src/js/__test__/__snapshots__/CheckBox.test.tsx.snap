@@ -64,6 +64,14 @@ exports[`render Android <Checkbox /> renders enabled Android Checkbox 1`] = `
 
 exports[`render IOS <Checkbox /> renders IOS Checkbox with full setting 1`] = `
 <View
+  accessibilityRole="checkbox"
+  accessibilityState={
+    Object {
+      "checked": false,
+      "disabled": false,
+    }
+  }
+  accessible={true}
   pointerEvents="auto"
 >
   <RNCCheckbox
@@ -97,6 +105,14 @@ exports[`render IOS <Checkbox /> renders IOS Checkbox with full setting 1`] = `
 
 exports[`render IOS <Checkbox /> renders IOS Checkbox without disabled props 1`] = `
 <View
+  accessibilityRole="checkbox"
+  accessibilityState={
+    Object {
+      "checked": true,
+      "disabled": false,
+    }
+  }
+  accessible={true}
   pointerEvents="auto"
 >
   <RNCCheckbox
@@ -119,6 +135,14 @@ exports[`render IOS <Checkbox /> renders IOS Checkbox without disabled props 1`]
 
 exports[`render IOS <Checkbox /> renders disabled IOS Checkbox 1`] = `
 <View
+  accessibilityRole="checkbox"
+  accessibilityState={
+    Object {
+      "checked": true,
+      "disabled": true,
+    }
+  }
+  accessible={true}
   pointerEvents="none"
 >
   <RNCCheckbox
@@ -141,6 +165,14 @@ exports[`render IOS <Checkbox /> renders disabled IOS Checkbox 1`] = `
 
 exports[`render IOS <Checkbox /> renders disabled false IOS Checkbox 1`] = `
 <View
+  accessibilityRole="checkbox"
+  accessibilityState={
+    Object {
+      "checked": true,
+      "disabled": false,
+    }
+  }
+  accessible={true}
   pointerEvents="auto"
 >
   <RNCCheckbox
@@ -163,6 +195,14 @@ exports[`render IOS <Checkbox /> renders disabled false IOS Checkbox 1`] = `
 
 exports[`render IOS <Checkbox /> renders enabled IOS Checkbox 1`] = `
 <View
+  accessibilityRole="checkbox"
+  accessibilityState={
+    Object {
+      "checked": false,
+      "disabled": false,
+    }
+  }
+  accessible={true}
   pointerEvents="auto"
 >
   <RNCCheckbox
@@ -184,6 +224,14 @@ exports[`render IOS <Checkbox /> renders enabled IOS Checkbox 1`] = `
 
 exports[`render IOS <Checkbox /> renders hideBox IOS Checkbox 1`] = `
 <View
+  accessibilityRole="checkbox"
+  accessibilityState={
+    Object {
+      "checked": true,
+      "disabled": false,
+    }
+  }
+  accessible={true}
   pointerEvents="auto"
 >
   <RNCCheckbox
